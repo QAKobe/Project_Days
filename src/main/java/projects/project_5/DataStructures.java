@@ -5,7 +5,9 @@ import java.util.*;
 public class DataStructures {
 
     /*
-        1. Fix the string: create a method that separate numbers from the string ex. 12dsd%^ separated -> numbers, letters, and special characters and store them in a list
+        1. Create a method that separates numbers from a string.
+        For example, given the input "12dsd%^", the method should separate the string into
+        numbers, letters, and special characters, and store them in a list.
 
         2. Create a method that accepts a string as a parameter, prints the frequency of each letter in the order of their appearance,
            and prints the most occurred letter along with its count.
@@ -14,9 +16,9 @@ public class DataStructures {
                            b=1
                            a=2
             hence, my method should return above letters AND a=2
-        3. Create a method that sorts List of integers and returns that sorted List cannot use other interfaces except List
+        3. Create a method that sorts a list of integers and returns the sorted list. You cannot use any other interfaces except List.
 
-        4. Find duplicates from an array using SET interface and print out only the duplicates
+        4. Find duplicates from an array using the Set interface and print only the duplicates.
 
         5.Create a Vehicles class, have your constructor declared along with instance variables and connect with them via constructor
             in Vehicles Class declare:
