@@ -26,8 +26,8 @@ public class DataStructures {
                 2. Constructor and map it with your instances variables
                 3. Declare your getter and setters
                 4.
-            in DataStructures class create multple objects out of that class and provide data into parameters
-            now write a logic, to group up data. For instance, if years for all vehicles are in 2000, print a list of vevicles that fall under 2000
+            in DataStructures class create multiple objects out of that class and provide data into parameters
+            now write a logic, to group up data. For instance, if years for all vehicles are in 2000, print a list of vehicles that fall under 2000
                -> 2000 = [Mercedes, BMW, Jeep]
      */
 
@@ -111,13 +111,25 @@ public class DataStructures {
 
     // Task 4
     public static Set<Integer> findDuplicates(int[] nums) {
+//        Set<Integer> numbers = new HashSet<>();
+//        Set<Integer> duplicates = new HashSet<>();
+//
+//        for (int num : nums) {
+//            if (!numbers.add(num)) {
+//                duplicates.add(num);
+//            }
+//        }
+//
+//        return duplicates;
+
         Set<Integer> numbers = new HashSet<>();
         Set<Integer> duplicates = new HashSet<>();
 
         for (int num : nums) {
-            if (!numbers.add(num)) { // Attempt to add num to numbers
-                // If add returns false, it means num is a duplicate
+            if (numbers.contains(num)) {
                 duplicates.add(num);
+            } else {
+                numbers.add(num);
             }
         }
 
@@ -185,7 +197,7 @@ public class DataStructures {
         sortList(list);
 
         int[] arrays = {1, 2, 3, 4, 5, 5, 5, 6, 6, 1, 1};
-        System.out.println(findDuplicates(arrays));
+        System.out.println(findDuplicates(arrays) + " duplicates here");
         String str = "123%$#$%dgfgASDF4355ASFS";
         fixTheString(str);
 
