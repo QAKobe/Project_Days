@@ -1,6 +1,6 @@
 package projects.project_3;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class Logics {
 
@@ -163,8 +163,27 @@ public class Logics {
         }
 
         System.out.println(Arrays.toString(array));
+        System.out.println("Hello LeetCoder");
+//this was question
+        List<Integer> input1 = Arrays.asList(1, 4, 2, 3,4);
+        List<Integer> input2 = Arrays.asList(5, 4, 6, 7);
+
+
+// solution is below
+        Set<Integer> set1 = new HashSet<>(input1);
+        Set<Integer> set2 = new HashSet<>(input2);
+
+        // Find intersection
+        set1.retainAll(set2);
+
+        // Convert the result to a list and print
+        List<Integer> result = new ArrayList<>(set1);
+        System.out.println("Intersection: " + result);
+    }
+
+
 
 
     }
 
-}
+
